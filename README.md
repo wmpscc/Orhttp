@@ -83,23 +83,6 @@ public void asyGetHttp(String url)
             // UI界面的更新等相关操作
         }
     };
-
-    /**
-     * 网络操作相关的子线程
-     */
-    Runnable networkTask = new Runnable() {
-
-        @Override
-        public void run() {
-            String content = postHttp("http://47.95.7.169:8000/");
-            Message msg = new Message();
-            Bundle data = new Bundle();
-            data.putString("value", content);
-            msg.setData(data);
-            handler.sendMessage(msg);
-        }
-    };
-
 ```
 #### POST方法上传文件类型参数参考这里[MIME 参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
 

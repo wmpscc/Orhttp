@@ -101,3 +101,5 @@ public void asyGetHttp(String url)
     };
 
 ```
+#### POST方法上传文件类型参数参考这里[MIME 参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
+
